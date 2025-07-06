@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobGenie - Resume Advisor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="jobgenie.png" alt="JobGenie Logo" class="logo-icon" />
+        <h1 class="logo">JobGenie</h1>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#resume">Scan</a>
+        <a href="#suggestion">Improve</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Bridge Education and Employment</h2>
+    <p>AI-powered tools to help you reach your dream career.</p>
+    <a href="#resume" class="btn">Start Now</a>
+  </section>
+
+  <section id="features" class="features">
+    <h3>Our Features</h3>
+    <div class="feature-grid">
+      <div class="feature-box feature-resume">
+        <div class="overlay">
+          <h4>Resume Scanner</h4>
+          <p>Upload your resume and get job-matched instantly.</p>
+        </div>
+      </div>
+      <div class="feature-box feature-job">
+        <div class="overlay">
+          <h4>Job Suggestions</h4>
+          <p>Get personalized roles that fit your background.</p>
+        </div>
+      </div>
+      <div class="feature-box feature-mock">
+        <div class="overlay">
+          <h4>Mock Interviews</h4>
+          <p>Practice interviews with expert-level questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume-upload">
+    <h3>Upload Your Resume</h3>
+    <p>Scan your resume and get career-matching insights.</p>
+    <input type="file" id="resumeInput" accept=".pdf,.doc,.docx">
+    <button onclick="scanResume()">Scan Resume</button>
+    <p id="scanResult" class="result"></p>
+  </section>
+
+  <section id="suggestion" class="resume-suggestion">
+    <h3>Enhance Your Resume</h3>
+    <p>Paste your resume text and get AI-generated suggestions.</p>
+    <textarea id="resumeText" placeholder="Paste resume text here..."></textarea>
+    <button onclick="getSuggestions()">Get Suggestions</button>
+    <div id="suggestionOutput" class="result"></div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>Contact us: jobgenie@careerconnect.com | +91-XXXXXXXXXX</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

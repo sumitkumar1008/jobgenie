@@ -1,0 +1,179 @@
+:root {
+  --primary: #0d3b66;
+  --accent: #f4d35e;
+  --light: #fefcfb;
+  --success: #00a896;
+  --danger: #f95738;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://t4.ftcdn.net/jpg/03/02/96/77/360_F_302967749_eqlKLXCTRrkCCuWj9NdNoNrFYqkZrkCM.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.header {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 60px 20px;
+}
+
+.btn {
+  background-color: var(--accent);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature-box {
+  width: 280px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.feature-resume {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2Q9FzQDNFxFHpUFdvw3k8AGWf5xtVCTpAJK3fbJjPXXCCvIZ298ekYvXHWhTzouIfuM&usqp=CAU');
+}
+
+.feature-job {
+  background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-recruitment-and-job-seeker-background-design-picture-image_1492121.jpg');
+}
+
+.feature-mock {
+  background-image: url('https://chanakyaiasacademy.com/wp-content/uploads/2023/01/Mock-interview.jpg');
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.resume-upload {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e0f0ff;
+}
+
+.resume-upload input[type="file"] {
+  margin-top: 15px;
+}
+
+.resume-upload button {
+  margin-top: 10px;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--success);
+}
+
+.resume-suggestion {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.resume-suggestion textarea {
+  width: 90%;
+  max-width: 600px;
+  height: 180px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.resume-suggestion button {
+  margin-top: 10px;
+  background-color: var(--success);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
