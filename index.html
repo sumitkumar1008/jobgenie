@@ -18,6 +18,7 @@
         <a href="#">Home</a>
         <a href="#features">Features</a>
         <a href="#resume">Scan</a>
+        <a href="#videos">Videos</a>
         <a href="#suggestion">Improve</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -62,16 +63,45 @@
     <p id="scanResult" class="result"></p>
   </section>
 
-  <section id="suggestion" class="resume-suggestion">
-    <h3>Enhance Your Resume</h3>
-    <p>Paste your resume text and get AI-generated suggestions.</p>
+<section id="suggestion" class="resume-suggestion">
+  <h3>Enhance Your Resume</h3>
+  <p>Paste your resume text and get AI-generated suggestions.</p>
+
+  <div class="enhancer-container">
     <textarea id="resumeText" placeholder="Paste resume text here..."></textarea>
     <button onclick="getSuggestions()">Get Suggestions</button>
-    <div id="suggestionOutput" class="result"></div>
-  </section>
+    <div id="suggestionOutput" class="suggestion-box"></div>
+  </div>
+</section>
+
+  <section id="videos" class="career-videos">
+  <h3>Career Guidance Videos</h3>
+  <div class="video-grid">
+    <div class="video-box">
+    <!-- GOOD: Embed link -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CPAhCOMhJds?si=cdQi9USKuRgo-98j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/h-NjW4Wupzs?si=9aONchG2ejI_9tZ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/4e6KSaCxcHs?si=KakcwgTQa9YECKui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zhpcgpqWc1Q?si=ImGF0OW2KFkLal_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VJdmxoctulI?si=4_DnQMhGFGrVzSDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <div class="video-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K2mP36DoekA?si=IaHi1fqErT4Axu4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 
   <footer id="contact" class="footer">
-    <p>Contact us: jobgenie@careerconnect.com | +91-XXXXXXXXXX</p>
+    <p>Contact us: jobgenie@careerconnect.com | 1800 0004 8888 6666</p>
   </footer>
 
   <script src="script.js"></script>
