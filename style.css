@@ -21,11 +21,14 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 0 auto;
+  height: 100%;
+  margin: auto;
   padding: 10px 20px;
 }
 
 .header {
+  width: 100%;
+  height: 50px;
   background-color: var(--primary);
   color: white;
   padding: 20px 0;
@@ -59,6 +62,149 @@ nav a {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 60px 20px;
+}
+
+.job-search {
+  padding: 40px 20px 0;
+}
+
+.job-search-panel {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.job-search-copy h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.job-search-copy p {
+  margin: 10px 0 0;
+}
+
+.job-search-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.job-search-form input {
+  flex: 1 1 280px;
+  min-height: 50px;
+  border: 1px solid rgba(13, 59, 102, 0.2);
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.job-search-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(13, 59, 102, 0.12);
+}
+
+.job-search-form button {
+  min-height: 50px;
+  border: none;
+  border-radius: 14px;
+  padding: 0 22px;
+  background: linear-gradient(135deg, var(--primary), #145f99);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.job-search-form button:hover {
+  filter: brightness(1.05);
+}
+
+.job-search-status {
+  margin: 14px 0 0;
+  color: #4c5b6b;
+  font-weight: 500;
+}
+
+.job-search-status.is-error {
+  color: var(--danger);
+}
+
+.job-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(13, 59, 102, 0.08);
+}
+
+.job-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.job-company {
+  margin: 8px 0 0;
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.job-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #eaf5ff;
+  color: #13507a;
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.job-description {
+  margin: 14px 0 0;
+  color: #415266;
+  line-height: 1.55;
+}
+
+.job-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.job-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(224, 240, 255, 0.9);
+  color: #1d3557;
+  font-weight: 600;
 }
 
 .btn {
@@ -96,7 +242,22 @@ nav a {
 }
 
 .feature-resume {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2Q9FzQDNFxFHpUFdvw3k8AGWf5xtVCTpAJK3fbJjPXXCCvIZ298ekYvXHWhTzouIfuM&usqp=CAU');
+  background-image: url('https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-resume-260nw-2628979905.jpg');
+  background-position: center;
+}
+
+.feature-resume .overlay {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(13, 59, 102, 0.48));
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-resume .overlay h4 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.feature-resume .overlay p {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .feature-job {
@@ -142,6 +303,7 @@ nav a {
   margin-top: 15px;
   font-weight: 600;
   color: var(--success);
+  white-space: pre-wrap;
 }
 
 .resume-suggestion {

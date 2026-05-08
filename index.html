@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JobGenie - Resume Advisor</title>
+  <title>JobGenie - Career Assistant</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,13 +27,31 @@
   </header>
 
   <section class="hero">
-    <h2>Bridge Education and Employment</h2>
-    <p>AI-powered tools to help you reach your dream career.</p>
-    <a href="#resume" class="btn">Start Now</a>
+    <h2>Build, Improve, Get Hired</h2>
+    <p>AI-powered tools to enhance your resume, practice interviews, and discover jobs that match your skills to help you reach your dream career.
+    </p>
+    <a href="#resume" class="btn">Start Building Your Career Now!</a>
+  </section>
+
+  <section id="job-search" class="job-search">
+    <div class="job-search-panel">
+      <div class="job-search-copy">
+        <h3>Search Remote Jobs</h3>
+        <p>Enter your role and get matching remote jobs from Remotive.</p>
+      </div>
+
+      <div class="job-search-form" role="search" aria-label="Job search by role">
+        <input type="text" id="jobRoleInput" placeholder="Example: Frontend Developer" autocomplete="off" />
+        <button type="button" id="jobSearchButton">Search Jobs</button>
+      </div>
+
+      <p id="jobSearchStatus" class="job-search-status">Try a role like Product Manager, Data Analyst, or React Developer.</p>
+      <div id="jobResults" class="job-results"></div>
+    </div>
   </section>
 
   <section id="features" class="features">
-    <h3>Our Features</h3>
+    <h3>Our Key Features</h3>
     <div class="feature-grid">
       <div class="feature-box feature-resume">
         <div class="overlay">
@@ -102,9 +120,9 @@
 
   <section id="resume" class="resume-upload">
     <h3>Upload Your Resume</h3>
-    <p>Scan your resume and get career-matching insights.</p>
-    <input type="file" id="resumeInput" accept=".pdf,.doc,.docx">
-    <button onclick="scanResume()">Scan Resume</button>
+    <p>Scan your resume to get an ATS score, matched skills, and the best-fit role.</p>
+    <input type="file" id="resumeInput" accept=".pdf,.docx,.txt">
+    <button onclick="scanResume()">Check ATS Score</button>
     <p id="scanResult" class="result"></p>
   </section>
 
@@ -123,7 +141,6 @@
   <h3>Career Guidance Videos</h3>
   <div class="video-grid">
     <div class="video-box">
-    <!-- GOOD: Embed link -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CPAhCOMhJds?si=cdQi9USKuRgo-98j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <div class="video-box">
